@@ -123,8 +123,19 @@
                         </li>
                         <li class="header__navbar-item "><a href="#" class="header__navbar-item-link
                             "><i class="fa-regular fa-circle-question"></i>Hỗ trợ</a></li>
-                        <li class="header__navbar-item "><a href="#" class="header__navbar-item-link
-                            "><i class="fa-solid fa-globe"></i>Tiếng Việt</a></li>
+                        <li class="header__navbar-item "><a href="#" class="header__navbar-item-link">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M8.00065 14.6667C11.6825 14.6667 14.6673 11.6819 14.6673 8.00004C14.6673 4.31814 11.6825 1.33337 8.00065 1.33337C4.31875 1.33337 1.33398 4.31814 1.33398 8.00004C1.33398 11.6819 4.31875 14.6667 8.00065 14.6667Z"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M5.33464 8.00004C5.33464 11.6819 6.52854 14.6667 8.0013 14.6667C9.47406 14.6667 10.668 11.6819 10.668 8.00004C10.668 4.31814 9.47406 1.33337 8.0013 1.33337C6.52854 1.33337 5.33464 4.31814 5.33464 8.00004Z"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M1.33398 8H14.6673" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                                Tiếng Việt</a></li>
                         <li class="header__navbar-item "><a href="#" class="header__navbar-item-link header__navbar-item-bold
                             ">Đăng kí</a></li>
                         <li class="header__navbar-item header__navbar-item--separate "><a href="#" class="header__navbar-item-link header__navbar-item-bold
@@ -133,16 +144,27 @@
                     </ul>
                 </div>
             </nav>
+            <div class="header-with-search">
+                <div class="header__logo">
+                    <img src="https://freelogopng.com/images/all_img/1656181621shopee-logo-white.png" alt="logo"
+                        class="header__logo-img">
+
+                </div>
+                <div class="header__search">
+
+                </div>
+                <div class="header__cart"></div>
+            </div>
         </header>
         <div class="container"></div>
         <footer class="footer"></footer>
     </div>
     <!-- modal layout -->
-    <div class="modal">
+    <!-- <div class="modal">
         <div class="modal__overlay"></div>
-        <div class="modal__body">
-            <!-- Authen form -->
-            <div class="auth-form">
+        <div class="modal__body"> -->
+    <!-- Register form -->
+    <!-- <div class="auth-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -166,19 +188,62 @@
                         <p>
                     </div>
                     <div class="auth-form__controls">
-                        <button class="btn auth-form__controls-back">TRỞ LẠI</button>
-                        <button class="btn btn--primary btn--disableb">ĐĂNG KÝ</button>
+                        <button class="btn btn--size-s auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn-size-s btn--primary btn--disableb">ĐĂNG KÝ</button>
                     </div>
                 </div>
                 <div class="auth-form__socials">
-                    <a href="" class="btn btn--with-icon">
-                        <i class="fa-brands fa-square-facebook"></i> Kết nối với
-                        facebook</a>
-                    <a href="" class="btn btn--with-icon"><i class="fa-brands fa-google"></i> Kết nối với google</a>
+                    <a href="" class="auth-form__socials--facebook btn btn--with-icon">
+                        <i class="auth-form-socials-icon fa-brands fa-square-facebook"></i><span
+                            class="auth-form__socials-title">
+                            Facebook</span></a>
+                    <a href="" class="auth-form__socials--google btn btn--with-icon"><i
+                            class="auth-form-socials-icon fa-brands fa-google"></i> <span
+                            class="auth-form__socials-title">Google</span></a>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div> -->
+    <!-- login form -->
+    <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__swith-btn">Đăng ký</span>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-sparatate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp ?</a>
+                        </div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <button class="btn btn--size-s auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn-size-s btn--primary btn--disableb">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--sms btn btn--with-icon">
+                        <i class="fa-solid fa-comment-sms"></i><span class="auth-form__socials-title">
+                            SMS</span></a>
+                    <a href="" class="auth-form__socials--facebook btn btn--with-icon">
+                        <i class="auth-form-socials-icon fa-brands fa-facebook"></i><span
+                            class="auth-form__socials-title">
+                            Facebook</span></a>
+                    <a href="" class="auth-form__socials--google btn btn--with-icon"><i
+                            class="auth-form-socials-icon fa-brands fa-google"></i> <span
+                            class="auth-form__socials-title">Google</span></a>
+                </div>
+            </div> -->
+    <!-- </div>
+    </div> -->
 </body>
 
 </html>
