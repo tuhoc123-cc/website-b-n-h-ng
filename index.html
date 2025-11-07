@@ -24,8 +24,9 @@
 <body>
     <div class="app">
         <header class="header">
-            <nav class="header__navbar">
-                <div class="grid">
+            <div class="grid">
+                <nav class="header__navbar">
+
                     <ul class="header__navbar-list">
                         <li class="header__navbar-item "><a href="#" class="header__navbar-item-link
                             ">Kênh Người Bán</a></li>
@@ -135,15 +136,43 @@
                                     <path d="M1.33398 8H14.6673" stroke="currentColor" stroke-linecap="round"
                                         stroke-linejoin="round"></path>
                                 </svg>
-                                Tiếng Việt</a></li>
-                        <li class="header__navbar-item "><a href="#" class="header__navbar-item-link header__navbar-item-bold
+                                Tiếng Việt <svg class="header__navbar-item-language" viewBox="0 0 12 12" fill="none"
+                                    width="12" height="12" color="currentColor">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 8.146L11.146 3l.707.707-5.146 5.147a1 1 0 01-1.414 0L.146 3.707.854 3 6 8.146z"
+                                        fill="currentColor">
+                                    </path>
+                                </svg>
+                                <div class="header__navbar-notify-languages">
+                                    <ul class="header__navbar-notify-list">
+                                        <li class="header__navbar-notify-language">Tiếng Việt</li>
+                                        <li class="header__navbar-notify-language">English</li>
+                                    </ul>
+                                </div>
+                            </a></li>
+                        <!-- <li class="header__navbar-item "><a href="#" class="header__navbar-item-link header__navbar-item-bold header__navbar_icon-focus
                             ">Đăng kí</a></li>
                         <li class="header__navbar-item header__navbar-item--separate "><a href="#" class="header__navbar-item-link header__navbar-item-bold
-                            ">Đăng nhập</a></li>
-
+                            ">Đăng nhập</a></li> -->
+                        <li class="header__navbar-item header__navbar-user">
+                            <img src="https://scontent.fhan6-1.fna.fbcdn.net/v/t39.30808-1/502945701_725769663241470_6480156132719301970_n.jpg?stp=cp0_dst-jpg_s40x40_tt6&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeG0YrFZrFtAw2nZfOUC5bRxQQKIJ9GhNy9BAogn0aE3L60B2b-P_IIf7ppwLEcctBKM51nodaNY_I_OEZLfiV1S&_nc_ohc=6Iw--0zZcLcQ7kNvwHkt8K9&_nc_oc=AdlYAdxkKcL-yahnWmtcNVupGMZYE-ZOSm4Xxh7w1tIsAej0w7XOWzl0Zb5IpAsR_EI&_nc_zt=24&_nc_ht=scontent.fhan6-1.fna&_nc_gid=MWErKF6TVJV45w1WNYCajw&oh=00_AfcYZL9vZ0MSSXnCi_RwFosIClGqfhVajLpRnZJi6ZR_zQ&oe=690A94A6"
+                                alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Duy Nam</span>
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đơn mua </a>
+                                </li>
+                                <li class="header__navbar-user-item">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                </div>
-            </nav>
+                </nav>
+            </div>
             <div class="header-with-search">
                 <div class="header__logo">
                     <img src="https://freelogopng.com/images/all_img/1656181621shopee-logo-white.png" alt="logo"
@@ -151,12 +180,513 @@
 
                 </div>
                 <div class="header__search">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                        <div class="header__search-history">
 
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-item">
+                                    <a href="">Kem dưỡng da</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Kem trị mụn</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Dầu gội đầu</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="">Sữa tắm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="header__search-select">
+                        <span class="header__search-select-label"> Trong shop </span>
+                        <i class="header__search-select-icon fa-solid fa-chevron-down"></i>
+                    </div> -->
+                    <button class="header__search-btn">
+                        <svg height="19" viewBox="0 0 19 19" width="19" class="shopee-svg-icon">
+                            <g fill-rule="evenodd" stroke="none" stroke-width="1">
+                                <g transform="translate(-1016 -32)">
+                                    <g>
+                                        <g transform="translate(405 21)">
+                                            <g transform="translate(611 11)">
+                                                <path
+                                                    d="m8 16c4.418278 0 8-3.581722 8-8s-3.581722-8-8-8-8 3.581722-8 8 3.581722 8 8 8zm0-2c-3.3137085 0-6-2.6862915-6-6s2.6862915-6 6-6 6 2.6862915 6 6-2.6862915 6-6 6z">
+                                                </path>
+                                                <path
+                                                    d="m12.2972351 13.7114222 4.9799555 4.919354c.3929077.3881263 1.0260608.3842503 1.4141871-.0086574.3881263-.3929076.3842503-1.0260607-.0086574-1.414187l-4.9799554-4.919354c-.3929077-.3881263-1.0260608-.3842503-1.4141871.0086573-.3881263.3929077-.3842503 1.0260608.0086573 1.4141871z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
                 </div>
-                <div class="header__cart"></div>
+                <div class="header__cart">
+                    <div class="header__cart-wrap">
+                        <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                        <span class="header__cart-badge">41</span>
+                        <div class="header__cart-list">
+                            <h4 class="header__cart-heading">sản phẩm mới thêm</h4>
+                            <ul class="header__cart-list-item">
+                                <li class="header__cart-item">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfi0p73ulsztda@resize_w450_nl.webp"
+                                        alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name"> inline badge
+                                                Bộ sản phẩm Khoảnh khắc tự nhiên (Phyto Eye Cream 15ml + Phyto Oxygen
+                                                Cream
+                                                50ml + Guasha)</h5>
+                                            <div class="header__Cart-item-price-wrap">
+                                                <span class="header__cart-item-price">2.000.000</span>
+                                                <span class="header__cart-item-mutiply">₫</span>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="header__cart-item-body">
+                                            <span class="header__cart-item-desc">phân loai : Bạc</span>
+                                            <span class="header__cart-item-remove">Xóa</span>
+                                        </div> -->
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mfyv1pa1xxcc47.webp"
+                                        alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Dầu gội thảo dược Bưởi Bồ kết thuần chay
+                                                Giọt Lành 500ml
+                                            </h5>
+                                            <div class="header__Cart-item-price-wrap">
+                                                <span class="header__cart-item-price">500.000</span>
+                                                <span class="header__cart-item-mutiply">₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mdd0qdwcj6fw56.webp"
+                                        alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Combo chăm sóc da CONAPIDIL dưỡng ẩm và
+                                                làm sạch sâu mỗi ngày Pharmesthetic</h5>
+                                            <div class="header__Cart-item-price-wrap">
+                                                <span class="header__cart-item-price">3.931.000</span>
+                                                <span class="header__cart-item-mutiply">₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3qoa3w344os22.webp"
+                                        alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Váy trễ vai tơ in nơ Cassie dress</h5>
+                                            <div class="header__Cart-item-price-wrap">
+                                                <span class="header__cart-item-price">1.000.000</span>
+                                                <span class="header__cart-item-mutiply">₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="header__cart-item">
+                                    <img src="https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mbyynelmxu2a13.webp"
+                                        alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tủ lạnh 2 cánh Aqua 130 lít
+                                            </h5>
+                                            <div class="header__Cart-item-price-wrap">
+                                                <span class="header__cart-item-price">8.000.000</span>
+                                                <span class="header__cart-item-mutiply">₫</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="btn-group">
+                                <span class="btn-heading">46 Thêm Hàng Vào Giỏ</span>
+                                <button class="btn btn--primary">Xem giỏ hàng</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
-        <div class="container"></div>
+        <div class="container">
+            <div class="grid">
+                <div class="grid__row app__content">
+                    <div class="grid__column-2">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fa-solid fa-list">
+                                </i> Danh
+                                Mục
+                            </h3>
+                            <ul class="category-list">
+                                <li class="category-item item_head">
+                                    <a href="" class="category-item__link">Thời Trang nữ</a>
+                                </li>
+                                <li class="category-item category-item--active">
+                                    <a href="" class="category-item__link">Đầm/Váy</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Quần</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Quần đùi</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="" class="category-item__link">Chân váy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="grid__column-10">
+                        <div class="home-filter">
+                            <span class="home-filter__label">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn">Bán chạy</button>
+                            <div class="select-input">
+                                <span class="select-input__label">Giá</span>
+                                <i class="select-input__icon fas fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="" class="select-input__link">Giá : Thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item"><a href="" class="select-input__link">Giá : Cao đến
+                                            thấp</a></li>
+                                </ul>
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mgjgf3kvxerza1.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Đầm body 2 dây xanh ngọc ôm body phiên bản nhún ngực - sexy váy
+                                            ôm gợi cảm Chuẩn Loại 1</h4>
+                                        <span class="home-product-item__current">109.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 10k+
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lt9rd9ur4789e5.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Váy Tiểu Thư Tay Bồng Thắt Eo Đầm Dự Tiệc Dáng Chữ A Sinh Nhật
+                                            tiệc cưới [TLV3] - Thiên Lý Fashion</h4>
+                                        <span class="home-product-item__current">249.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 6k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-ljv3uhhyfp2scc.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Set váy tiểu thư thiết kế SV03 dài Đầm nữ công chúa
+                                            Firstdateclothing 89</h4>
+                                        <span class="home-product-item__current">209.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 2k+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lkrt08gr0e685b.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Set Áo Váy Phối Bèo Chiết Eo Siêu Nữ Tính , Set Bộ Đồ Nữ Thu Đông
+                                            PEARL Cúc Ngọc (Có bigsize)</h4>
+                                        <span class="home-product-item__current">89.000₫ - 150.000₫
+                                        </span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 36k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-loc4xc3vopsb6f.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Set áo thun tăm viền khuy vàng kèm chân váy xếp ly có quần bảo hộ
+                                            xixeoshop - S105</h4>
+                                        <span class="home-product-item__current">390.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 200k+</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mcji6289q46l3c.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Áo sơ mi kẻ tay phồng dáng ngắn thô linen xixeoshop - A46</h4>
+                                        <span class="home-product-item__current">80.908₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">4.8</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 80k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m14gycu2606y1e.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Váy khoét lưng Mina dress dáng dài tiểu thư xixeoshop - V69</h4>
+                                        <span class="home-product-item__current">139.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 316k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134201-23020-dvjxm5xrulnv0e.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Nón kết mũ lưỡi trai thêu ICON xanh rêu phối
+                                            lưới
+                                            thời trang hot trends nam nữ</h4>
+                                        <span class="home-product-item__current">59.000₫ - 99.000₫
+                                        </span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 36k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-mcoyec7o08tpad.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Váy Kaki Trắng 2 Dây Nhúm Ngực Ly Eo Chun Lưng Dễ Mặc 2 Form Ngắn
+                                            Dài Cá Tính (Ảnh Thật Trải Sàn) Lollaye V.4</h4>
+                                        <span class="home-product-item__current">146.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">4.9</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 20k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/sg-11134201-23020-en57vadblgnvd3.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Đầm Hai Dây Xòe Tôn Dáng Đi Tiệc Sang Trọng Màu Nâu Form Dài ( Có
+                                            Sẵn-Giao ngay)</h4>
+                                        <span class="home-product-item__current">79.000₫ - 205.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 36k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lmg9rt07jq3j4e.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">VÁY GÂN ĐŨA XOÈ NGẮN XINH LẮM V2018</h4>
+                                        <span class="home-product-item__current">59.000₫ - 69.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">4.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 3k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7ra0g-m6805k9wx86w78.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Váy body trễ vai thiết kế BIGSIZE dáng bút chì, đầm dự tiệc sự
+                                            kiện chất Gold Nhật cách điệu sang chảnh Shi Shang</h4>
+                                        <span class="home-product-item__current">298.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 16k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-7ras8-m3ermhk6b3c831.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Set đầm body tay dài kèm áo yếm dự tiệc lissa Đ28</h4>
+                                        <span class="home-product-item__current">139.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 26k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/e17b6134daecc7ba6b4f76a1f596feba.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">Váy sát nách body cổ xẻ V thun gân, Đầm ba lỗ cổ xẻ V - Hình THẬT
+                                            ENTYTY SHOP</h4>
+                                        <span class="home-product-item__current">79.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">5.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 36k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid__column-2-4">
+                                    <div class="home-product-item">
+                                        <div class="home-product-item__img"
+                                            style="background-image: url(https://down-vn.img.susercontent.com/file/vn-11134207-820l4-mg1xhdcwtpu600.webp);">
+                                        </div>
+                                        <h4 class="home-product-item__name"><img
+                                                src="https://down-vn.img.susercontent.com/file/vn-11134258-7r98o-lyb3kdam2qw17d"
+                                                alt="">SÒ VINTAGE - VELIA đầm ren kim sa lót lưới nhiều lớp, phom xòe
+                                        </h4>
+                                        <span class="home-product-item__current">2.590.000₫</span><br>
+                                        <div class="home-product-item__price-tag">Rẻ vô địch</div>
+                                        <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="home-product-item__rating-score">4.0</span>
+                                            </span>
+                                            <span class="home-product-item__sold"> Đã bán 3k+ </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer"></footer>
     </div>
     <!-- modal layout -->
@@ -242,8 +772,8 @@
                             class="auth-form__socials-title">Google</span></a>
                 </div>
             </div> -->
-    <!-- </div>
-    </div> -->
+    </div>
+    </div>
 </body>
 
 </html>
